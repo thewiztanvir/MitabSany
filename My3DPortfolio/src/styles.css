@@ -1,0 +1,346 @@
+/* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/PowerGrotesk-Regular.ttf') format('truetype');
+}
+*{
+    font-family: 'MyCustomFont';
+}
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is above other elements */
+}
+
+/* Change button position for mobile devices */
+
+
+.space-button {
+    position: relative;
+    padding: 12px 35px;
+    background-color: white;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    
+    border-radius: 8px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  .space-button:hover {
+    background: transparent;
+    color: #fec195;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  .space-button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .space-button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .space-button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .space-button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .space-button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .space-button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+  
+/* batman button from here */
+
+.batman-button {
+  border: none;
+  position: relative;
+  width: 200px;
+  height: 73px;
+  padding: 0;
+  z-index: 2;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='868' width='2500' viewBox='0 0 726 252.17'%3E%3Cpath d='M483.92 0S481.38 24.71 466 40.11c-11.74 11.74-24.09 12.66-40.26 15.07-9.42 1.41-29.7 3.77-34.81-.79-2.37-2.11-3-21-3.22-27.62-.21-6.92-1.36-16.52-2.82-18-.75 3.06-2.49 11.53-3.09 13.61S378.49 34.3 378 36a85.13 85.13 0 0 0-30.09 0c-.46-1.67-3.17-11.48-3.77-13.56s-2.34-10.55-3.09-13.61c-1.45 1.45-2.61 11.05-2.82 18-.21 6.67-.84 25.51-3.22 27.62-5.11 4.56-25.38 2.2-34.8.79-16.16-2.47-28.51-3.39-40.21-15.13C244.57 24.71 242 0 242 0H0s69.52 22.74 97.52 68.59c16.56 27.11 14.14 58.49 9.92 74.73C170 140 221.46 140 273 158.57c69.23 24.93 83.2 76.19 90 93.6 6.77-17.41 20.75-68.67 90-93.6 51.54-18.56 103-18.59 165.56-15.25-4.21-16.24-6.63-47.62 9.93-74.73C656.43 22.74 726 0 726 0z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  -webkit-mask-size: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateY(8px)
+ }
+ 
+ .batman-button:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0px 0 0 0 lime;
+  transition: all 2s ease;
+ }
+ 
+ .batman-button:hover:after {
+  box-shadow: 0px -13px 56px 12px #ffffffa6;
+ }
+ 
+ .batman-button span {
+  position: absolute;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 100;
+  left: 50%;
+  top: 39%;
+  letter-spacing: 3px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: white;
+  transition: all 2s ease;
+ }
+ 
+ .batman-button:hover span {
+  color: black;
+ }
+ 
+ .batman-button:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
+ }
+ 
+ .batman-button:hover:before {
+  width: 100%;
+ }
+ 
+/* card part css */
+
+
+.card {
+  position: relative;
+  width: 98%;
+  height: 350px;
+  background: rgb(207, 205, 196);
+  background: linear-gradient(137deg, rgb(248, 241, 246) 0%, rgba(0,212,255,1) 100%);
+  transition: 0.3s ease;
+  border-radius: 30px;
+  filter: drop-shadow(0px 0px 30px rgba(146, 144, 146, 0.5));
+}
+
+.card::after {
+  content: '';
+  background-color: #181818;
+  position: absolute;
+  z-index: 1;
+  transition: 0.3s ease;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  border-radius: 28px;
+}
+
+.card:hover {
+  filter: drop-shadow(0px 0px 30px rgb(215, 204, 214));
+}
+
+.card-content {
+  position: relative;
+  z-index: 2; /* Ensures the text is above the background layer */
+  color: white; /* Text color */
+  padding: 20px;
+  text-align: center; /* Center-align text */
+  font-family: Arial, sans-serif; /* Optional: Font styling */
+}
+/* card button part */
+
+/* From Uiverse.io by Rodrypaladin */ 
+.button {
+  background-image: linear-gradient(to right bottom, #fffdff, #b1a8ae, #ff5956, #ffb900, #fffe00);
+  border: none;
+  font-size: 1.2em;
+  border-radius: 1.5em;
+  padding: 4px;
+  transition: border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s, 
+  padding 0.2s ease-in;
+  position: relative;
+}
+
+.button__int {
+  background-color: #212121;
+  color: white;
+  border-radius: 1.3em;
+  padding: 10px 40px;
+  transition: all 0.2s ease-in,
+  border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s,
+  padding 0.2s ease-in;
+  font-weight: 600;
+  z-index: -1;
+  box-shadow: -15px -10px 30px -5px rgba(192, 186, 193, 0.8),
+    15px -10px 30px -5px rgba(255, 254, 255, 0.8),
+    15px 10px 30px -5px rgba(255, 174, 0, 0.8),
+    -15px 10px 30px -5px rgba(255, 230, 0.8);
+}
+
+.button:active .button__int {
+  padding: 10px 30px;
+}
+
+.button:hover {
+  border-radius: 0;
+}
+
+.button:hover .button__int {
+  border-radius: 0;
+}
+
+.button:hover .button__int {
+  box-shadow: -25px -10px 30px -5px rgba(25, 168, 225, 0.7),
+    25px -10px 30px -5px rgba(110, 196, 240, 0.7),
+    25px 10px 30px -5px rgba(255, 174, 0, 0.7),
+    -25px 10px 30px -5px rgba(255, 230, 0, 0.7);
+}
+
+
+
+
+  @media (max-width: 767px) {
+    .space-button {
+      padding: 8px 20px; /* Smaller padding for mobile */
+      font-size: 14px;   /* Smaller font size for mobile */
+    }
+  }
